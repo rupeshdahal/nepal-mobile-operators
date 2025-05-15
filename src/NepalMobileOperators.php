@@ -83,7 +83,7 @@ class NepalMobileOperators
     }
 
     /**
-     * Identify the operator based on number prefix
+     * Identify the operator based on the number prefix
      *
      * @return string
      */

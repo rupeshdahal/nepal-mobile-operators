@@ -7,8 +7,7 @@ namespace RupeshDai\NepalMobileOperators;
  */
 class MobileOperator
 {
-    const NTC_NAMASTE = 'Ntc (Namaste SIM)';
-    const NTC_CDMA_GSM = 'Ntc (Earlier CDMA, now with GSM)';
+    const NTC_NAMASTE = 'Ntc';
     const NCELL = 'Ncell';
     const SMART_CELL = 'Smart Cell';
     const UTL = 'UTL';
@@ -24,7 +23,6 @@ class MobileOperator
     {
         return [
             self::NTC_NAMASTE,
-            self::NTC_CDMA_GSM,
             self::NCELL,
             self::SMART_CELL,
             self::UTL,
@@ -41,15 +39,11 @@ class MobileOperator
     {
         return [
             self::NTC_NAMASTE => [
-                'prefixes' => ['984', '985', '986', '976'],
+                'prefixes' => ['984', '985', '986', '976','974', '975'],
                 'technology' => 'GSM'
             ],
-            self::NTC_CDMA_GSM => [
-                'prefixes' => ['974', '975'],
-                'technology' => 'CDMA/GSM'
-            ],
             self::NCELL => [
-                'prefixes' => ['980', '981', '982', '970'],
+                'prefixes' => ['980', '981', '982', '970','900','880'],
                 'technology' => 'GSM'
             ],
             self::SMART_CELL => [
